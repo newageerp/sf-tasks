@@ -71,7 +71,7 @@ class TaskBase implements ITask
 
     /**
      * @ORM\Column (type="json", nullable=true)
-     * @OA\Property(type="array", @OA\Items(type="string"))
+     * @OA\Property(type="array", @OA\Items(type="string"), additionalProperties={{"as":"fileMultiple"}})
      */
     protected ?array $files = [];
 
